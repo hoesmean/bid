@@ -36,9 +36,38 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
 
-
+//Apis 
 app.use('/api/users', require('./routes/user'));
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/company', require('./routes/company'));
+app.use('/api/category', require('./routes/category'));
+app.use('/api/subCategory', require('./routes/subCategory'));
+app.use('/api/post', require('./routes/post'));
+app.use('/api/tag', require('./routes/tag'));
+app.use('/api/postTag', require('./routes/postTag'));
+app.use('/api/event', require('./routes/event'));
+app.use('/api/country', require('./routes/country'));
+app.use('/api/city', require('./routes/city'));
+app.use('/api/jobPosting', require('./routes/jobPosting'));
+app.use('/api/followUser', require('./routes/followUser'));
+app.use('/api/comRevenue', require('./routes/comRevenue'));
+app.use('/api/comSubCom', require('./routes/comSubCom'));
+app.use('/api/comWorkCom', require('./routes/comWorkCom'));
+app.use('/api/eventTicket', require('./routes/eventTicket'));
+app.use('/api/eventTimeline', require('./routes/eventTimeline'));
+app.use('/api/userCompany', require('./routes/userCompany'));
+app.use('/api/followCompany', require('./routes/followCompany'));
+app.use('/api/comment', require('./routes/comment'));
+app.use('/api/commentReply', require('./routes/commentReply'));
+
+
+
+
+
+
+
+
+
 
 
 sequelize
